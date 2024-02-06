@@ -57,11 +57,7 @@ button{
   width: 100px;
 }
 
-button:disabled {
-  pointer-events: none;
-}
-
-button:hover {
+#yes:hover {
   color: #fff;
   border: 2px solid #FB7777;
   background-color: #FB7777;
@@ -69,7 +65,7 @@ button:hover {
   transform: translateY(-2px);
 }
 
-button:active {
+#yes:active {
   box-shadow: none;
   transform: translateY(0);
 }
