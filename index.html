@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Dear Stinky 🧡</title>
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/20879eec63.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="styles.css">
+        <script src="index.js" charset="utf-8"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div id='loading-gif'>
+                <img src="loading.gif" alt="Loading gif">
+                <p>Loading...</p>
+            </div>
+            <div id='main' class="none hidden">
+                <img id='question-gif' src="question.gif" alt="Question gif">
+                <p id="text" class="none">You said yes! No take backsies hehe 💖</p>
+                <div>
+                    <button id="yes" onclick="yes();">Yes!</button>
+                    <button id="no" onmouseover="no();">No</button>
+                </div>
+            </div>
+        </div>
+        <footer>Made with lots of ❤️</footer>
+    </body>

@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Mono", monospace;
+    scroll-behavior: smooth;
+}
+body{
+    text-align: center;
+    position: fixed;
+}
+
+.container{
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    height: 94vh;
+    width: 100vw;
+}
+
+div, img{
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+
+.none{
+    display: none;
+}
+
+.hidden{
+    opacity: 0;
+}
+
+/* CSS */
+button{
+  appearance: none;
+  background-color: white;
+  border: 2px solid #FB7777;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: #FB7777;
+  cursor: pointer;
+  font-size: 16px;
+  min-height: 60px;
+  min-width: 0;
+  outline: none;
+  padding: 16px 24px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  will-change: transform;
+  width: 100px;
+}
+
+button:disabled {
+  pointer-events: none;
+}
+
+button:hover {
+  color: #fff;
+  border: 2px solid #FB7777;
+  background-color: #FB7777;
+  box-shadow: rgb(255, 89, 123, .25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+button:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+.footer{
+    position: sticky;
+    z-index: 100;
+}
